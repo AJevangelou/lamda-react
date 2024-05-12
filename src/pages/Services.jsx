@@ -23,7 +23,7 @@ const Services = () => {
         onLoad={() => setImageLoaded(true)}
       />
         <div className='flex flex-col justify-center items-center'>
-          <div className='bg-blue-300  py-10 flex flex-col justify-center items-center justify-items-center'>
+          <div className='bg-foreground-100 py-10 flex flex-col justify-center items-center justify-items-center'>
             <h1 className='text-center text-6xl text-white font-semibold font-worksans'>
             {serviceText.title.split('\n').map((line, index) => (
             <div key={index}>

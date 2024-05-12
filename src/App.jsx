@@ -6,10 +6,11 @@ import './index.css';
 const Home = lazy(() => import('./pages/Home'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Services = lazy(() => import('./pages/Services'));
+const Projects = lazy(() => import('./pages/Projects'));
 
 function App() {
   return (
-    <main className='bg-slate-300/20'>
+    <main className='bg-slate-300/20l'>
       <Router>
         <Navbar />
         <Suspense fallback={<div>Loading...</div>}>
@@ -17,6 +18,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/services' element={<Services />} />
+            <Route path='/projects' element={<Projects />} />
           </Routes>
         </Suspense>
       </Router>

@@ -59,8 +59,8 @@ const Contact = () => {
         style={imageLoaded ? {} : { display: `none` }}
         onLoad={() => setImageLoaded(true)}
       />
-            <div className='flex flex-col  justify-center items-center'>
-                <div className='bg-blue-300 py-7 flex flex-col justify-center items-center justify-items-center'>
+            <div className='flex flex-col  justify-center items-center bg-background-100'>
+                <div className='bg-foreground-100 py-7 flex flex-col justify-center items-center justify-items-center'>
                     <h1 className='text-center text-6xl text-white font-semibold font-worksans'>{text.title}</h1>
                     <h2 className='text-center text-white pt-4 w-3/4 text-2xl max-md:text-xl'>{text.subtitle}</h2>
                     
@@ -70,8 +70,8 @@ const Contact = () => {
             {contact.map((contact) => (
                 <ContactCard key={contact.title} {...contact}/>
             ))}
-  <div className='w-full flex flex-col items-center justify-center pb-14' >
-     <form onSubmit={handleSubmit} className='w-1/2 flex flex-col gap-7 mt-14'>
+  <div className='w-full flex flex-col items-center justify-center pb-14 bg-background-100' >
+     <form onSubmit={handleSubmit} className='w-1/2 flex flex-col gap-7 mt-14 '>
           
           <label className='text-black-500 font-semibold'>
           Name

@@ -12,7 +12,7 @@ const ContactCard = ({title, address, imgURL, contact_info}) => {
             <h2 className='text-center max-md:my-1'>{address}</h2>
         </div>
         <div className='flex flex-col items-center'>
-            <img src={imgURL} alt="logo" width={96} height={96} className='bg-contain bg-blue-500 rounded-full max-md:my-2'/>
+            <img src={imgURL} alt="logo" width={96} height={96} className='bg-contain bg-foreground-100 rounded-full max-md:my-2'/>
         </div>
         <div className='flex flex-col justify-center items-center'>
             <h1 className='text-center max-md:my-1'>

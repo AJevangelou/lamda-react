@@ -8,6 +8,15 @@ export default {
     extend: {
 
       colors: {
+        background:{
+          100: '#fafbfc'
+        },
+        border:{
+          100: '#d7dce7'
+        },
+        foreground:{
+          100: '#1e42a1'
+        },
         gray: {
           200: "#D5DAE1"
         },
