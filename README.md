@@ -28,10 +28,6 @@ The Yacht Web App Redesign project focuses on improving the visual appearance, r
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-- React.js: A JavaScript library for building user interfaces.
-- Tailwind CSS: A utility-first CSS framework for rapidly building custom designs.
-- React Router: Declarative routing for React applications.
-
 ## Installation
 
 1. Clone the repository:
