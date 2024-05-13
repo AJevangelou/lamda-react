@@ -2,6 +2,7 @@ import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import './index.css';
+import Loader from './components/Loader';
 
 const Home = lazy(() => import('./pages/Home'));
 const Contact = lazy(() => import('./pages/Contact'));
@@ -13,7 +14,7 @@ function App() {
     <main className='bg-slate-300/20l'>
       <Router>
         <Navbar />
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loader type={"header"}/>}>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/contact' element={<Contact />} />

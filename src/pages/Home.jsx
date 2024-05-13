@@ -1,6 +1,7 @@
 import {React, useState, Suspense, lazy } from 'react'
 import '../index.css'
 import bg_1 from '../assets/images/bg_1.webp'
+import Loader from '../components/Loader';
 
 
 const About = lazy(() => import('./About'));
@@ -32,14 +33,14 @@ const Home = () => {
       </h1>
     </div>
     <div className='absolute z-10 mb-0 left-1/2 bottom-8'>
-      <a href="#about-us" className="items-end">
+      <a href="#about-us" className="items-end" alt="scroll to about us">
         <svg xmlns="http://www.w3.org/2000/svg" className="cursor-pointer animate-bounce  h-12 w-12 text-white " fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </svg>
       </a>
     </div>
   </div>
-  <Suspense fallback={<div>Loading ...</div>}>
+  <Suspense fallback={<Loader />}>
     <About/>
     <Awards/>
   </Suspense>
