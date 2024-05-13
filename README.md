@@ -1,5 +1,7 @@
 # Lamda Yachts Web App Redesign
 
+![Screenshot](<screenshot.png>)
+
 This project aims to redesign a yacht web application using React.js and Tailwind CSS, enhancing its user interface and user experience.
 
 ## Table of Contents
